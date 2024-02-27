@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --CTAs-Focused-Active-states-Links-color: #4d5ae5;
+  --CTAs-color: #404bbf;
+  --Overlays-Shadows-Headings-color: #2e2f42;
+  --Valid-fields-Success-messages-color: #31d0aa;
+  --Body-text-color: #434455;
+  --Helper-text-Deemphasized-text-color: #8e8f99;
+  --Accent-color-Hairlines-Subtle-backgrounds: #e7e9fc;
+  --Light-mode-backgrounds-Light-mode-Dialogs-alerts-color: #f4f4fd;
+  --Header-team-card-background-color: #ffffff;
+  --Modal-background-color: #fcfcfc;
+}
+.logo::before {
+  content: "web";
+  color: var(--CTAs-Focused-Active-states-Links-color);
+}
+.logo::after {
+  content: "studio";
+  color: var(--Overlays-Shadows-Headings-color);
+}
+.logo-link {
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3125em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.header-links a:hover,
+.header-links a:focus {
+  text-decoration: underline;
+  color: var(--CTAs-Focused-Active-states-Links-color);
+}
+.header-links a:active {
+  color: var(--CTAs-Focused-Active-states-Links-color);
+}
+.body {
+  font-family: "Roboto", sans-serif;
+  color: var(--Body-text-color);
+}
+.header-links a {
+  text-decoration: none;
+  color: var(--Body-text-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+}
+.header {
+  background-color: var(--Header-team-card-background-color);
+  height: 72px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav ul {
+  gap: 2.5em;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.hero-section {
+  background-color: var(--Overlays-Shadows-Headings-color);
+  height: 37.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-title {
+  color: var(--Header-team-card-background-color);
+  letter-spacing: 0.02em;
+  font-size: 56px;
+}
+.order-button {
+  background-color: var(--CTAs-Focused-Active-states-Links-color);
+  color: var(--Header-team-card-background-color);
+  display: flex;
+  border: 0cap;
+  border-radius: 0.6lvh;
+  width: 169px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+}
+.order-button:hover,
+.order-button:focus {
+  background-color: var(--CTAs-color);
+}
+.our-goals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.we-doing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.our-team {
+  background-color: var(
+    --Light-mode-backgrounds-Light-mode-Dialogs-alerts-color
+  );
+  height: 45.75em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.our-team-header,
+.our-team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Header-team-card-background-color);
+}
+.footer-content {
+  color: var(--Header-team-card-background-color);
+  height: 19.5em;
+  background-color: var(--Overlays-Shadows-Headings-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 9.75em;
+}
+.logo-link > {
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer::after {
+  content: "studio";
+  color: var(--Header-team-card-background-color);
+}
+.Filters-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.button {
+  background-color: var(--Accent-color-Hairlines-Subtle-backgrounds);
+  color: var(--CTAs-Focused-Active-states-Links-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 0cap;
+  border-radius: 0.6lvh;
+  font-size: 16px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--CTAs-color);
+  color: var(--Header-team-card-background-color);
+  cursor: pointer;
+}
+.portofolio-elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
