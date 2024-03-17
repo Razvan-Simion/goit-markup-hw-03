@@ -24,6 +24,7 @@
   --Helper-text-Deemphasized-text-color: #8e8f99;
   --team-cards-background: #f4f4fd;
   --Modal-background-color: #fcfcfc;
+  --hero-image-background: #2e2f42;
 }
 .logo::before {
   content: "web";
@@ -37,9 +38,9 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 .logo-link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "raleway", sans-serif;
   font-size: 18px;
@@ -52,6 +53,9 @@
 }
 ul {
   list-style-type: none;
+}
+.container ul {
+  padding-left: 0%;
 }
 .header-links a:hover,
 .header-links a:focus {
@@ -77,6 +81,9 @@ ul {
   background-color: var(--header-background);
   display: flex;
   justify-content: space-evenly;
+  border-style: none none solid;
+  border-width: thin;
+  border-color: var(--filter-button-background);
 }
 .hero-section {
   background-color: var(--hero-background);
@@ -108,8 +115,11 @@ ul {
 }
 .our-goals {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  margin-left: 40px;
+  width: auto;
+  flex-wrap: wrap;
 }
 .we-doing {
   display: flex;
@@ -121,14 +131,16 @@ ul {
 }
 .our-team {
   background-color: var(--team-cards-background);
-  height: 45.75em;
-  margin-right: 0;
+  min-height: 45.75em;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 0px;
 }
 .our-team-header,
 .our-team-card {
@@ -191,7 +203,4 @@ ul {
 .contact-links {
   display: flex;
   margin-left: 120px;
-}
-.container ul {
-  padding-left: 0%;
 }
